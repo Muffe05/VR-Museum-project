@@ -57,8 +57,8 @@ namespace BNG {
                 }
             }
             else if (formattedKey.ToLower() == "enter") {
-                // Debug.Log("Pressed Enter");
-                // UnityEngine.EventSystems.ExecuteEvents.Execute(AttachedInputField.gameObject, null, UnityEngine.EventSystems.ExecuteEvents.submitHandler);
+                Debug.Log("Pressed Enter");
+                UnityEngine.EventSystems.ExecuteEvents.Execute(AttachedInputField.gameObject, null, UnityEngine.EventSystems.ExecuteEvents.submitHandler);
             }
             else if (formattedKey.ToLower() == "shift") {
                 ToggleShift();

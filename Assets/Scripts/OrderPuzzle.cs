@@ -23,6 +23,7 @@ public class OrderPuzzle : MonoBehaviour
     }
     public void PuzzleCompleted()
     {
+        Debug.Log("Order Puzzle Complete");
         //puzzle is done
     }
 }
