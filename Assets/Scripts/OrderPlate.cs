@@ -10,8 +10,16 @@ public class OrderPlate : MonoBehaviour
     {
         objectPlaced = other.gameObject;
     }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Artefact"))
+        {
+            objectPlaced = other.gameObject;
+        }
+    }
     private void OnTriggerExit(Collider other)
     {
+        if (other.gameObject == objectPlaced)
         objectPlaced = null;
     }
 }

@@ -9,12 +9,13 @@ public class KahootPuzzle : MonoBehaviour
     public List<QuizQuestion> puzzleList = new List<QuizQuestion>();
     public GameObject[] answerButtons;
     public int currentQuestion = 0;
+    public Text quizText;
     public void InitializeQuestion()
     {
+        quizText.text = puzzleList[currentQuestion].quizText;
         for (int i = 0; i < answerButtons.Length; i++)
         {
             answerButtons[i].GetComponentInChildren<Text>().text = puzzleList[currentQuestion].questions[i];
-            currentQuestion++;
         }
     }
     public void CheckAnswer(int index)
@@ -23,7 +24,7 @@ public class KahootPuzzle : MonoBehaviour
         {
             Debug.Log("Correct Answer");
             currentQuestion++;
-            if (currentQuestion > puzzleList.Count)
+            if (currentQuestion >= puzzleList.Count)
             {
                 PuzzleCompleted();
                 return;
@@ -39,6 +40,11 @@ public class KahootPuzzle : MonoBehaviour
     }
     public void PuzzleCompleted()
     {
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            Destroy(answerButtons[i]);
+        }
+        quizText.text = "Puzzle Completed!";
         Debug.Log("Puzzle is done");
     }
 }

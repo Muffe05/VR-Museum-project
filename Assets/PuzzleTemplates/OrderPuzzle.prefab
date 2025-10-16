@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 6934603113895369875}
   m_Layer: 0
   m_Name: Artefact
-  m_TagString: Untagged
+  m_TagString: Artefact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 4955360869134177631}
   m_Layer: 0
   m_Name: Artefact (3)
-  m_TagString: Untagged
+  m_TagString: Artefact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 7156635438248106219}
   m_Layer: 0
   m_Name: Artefact (2)
-  m_TagString: Untagged
+  m_TagString: Artefact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,10 +702,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plates:
-  - {fileID: 4508792073892099897}
-  - {fileID: 4508792074113958801}
-  - {fileID: 4508792073447183530}
-  - {fileID: 4508792073929448707}
+  - {fileID: 4508792073892660902}
+  - {fileID: 4508792073934451255}
+  - {fileID: 4508792074481153481}
+  - {fileID: 4508792074730654796}
   objectOrder:
   - {fileID: 333850873348674652}
   - {fileID: 5796519661498533922}
@@ -1697,7 +1697,7 @@ GameObject:
   - component: {fileID: 4611338228522749728}
   m_Layer: 0
   m_Name: Artefact (1)
-  m_TagString: Untagged
+  m_TagString: Artefact
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2151,6 +2151,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
+      propertyPath: m_Text
+      value: Order Objects in X order...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858460719086918109, guid: 1f75a4a1ec4271442a6c51de842cadf0,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f75a4a1ec4271442a6c51de842cadf0, type: 3}
