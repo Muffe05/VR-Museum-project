@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class TextPuzzle : MonoBehaviour
 {
+    public GameObject door;
     public InputField inputField;
     public string correctText;
     public void CheckAnswer()
@@ -16,6 +17,7 @@ public class TextPuzzle : MonoBehaviour
     }
     public void PuzzleCompleted()
     {
+        door.SetActive(false);
         Debug.Log("Text Puzzle Finish");
         //puzzle is done
     }

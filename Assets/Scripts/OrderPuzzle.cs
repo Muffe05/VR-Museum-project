@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OrderPuzzle : MonoBehaviour
 {
+    public GameObject door;
     public GameObject[] plates;
     public GameObject[] objectOrder;
     public void CheckOrder()
@@ -23,6 +24,7 @@ public class OrderPuzzle : MonoBehaviour
     }
     public void PuzzleCompleted()
     {
+        door.SetActive(false);
         Debug.Log("Order Puzzle Complete");
         //puzzle is done
     }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class KahootPuzzle : MonoBehaviour
 {
+    public GameObject door;
     public List<QuizQuestion> puzzleList = new List<QuizQuestion>();
     public GameObject[] answerButtons;
     public int currentQuestion = 0;
@@ -44,6 +45,7 @@ public class KahootPuzzle : MonoBehaviour
         {
             Destroy(answerButtons[i]);
         }
+        door.SetActive(false);
         quizText.text = "Puzzle Completed!";
         Debug.Log("Puzzle is done");
     }
